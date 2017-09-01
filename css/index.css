@@ -1,51 +1,51 @@
-.first{
-    width: 100%;
-    height: 100%;
-    background: url(../img/bg.jpg) no-repeat;
-    background-size:100%;
-    animation: bacs 1.4s 1;
-    position: absolute;
-}
-.second{
-    width: 100%;
-    height: 100%;
-    background: url(../img/bg.jpg) no-repeat;
-    background-size:100%;
-    animation: bacs 1.4s 1;
-    position: absolute;
-}
-.third{
-    width: 100%;
-    height: 100%;
-    background: url(../img/bg.jpg) no-repeat;
-    background-size:100%;
-    animation: bacs 1.4s 1;
-    position: absolute;
-}
-.fourth{
-    width: 100%;
-    height: 100%;
-    background: url(../img/bg.jpg) no-repeat;
-    background-size:100%;
-    animation: bacs 1.4s 1;
-    position: absolute;
-}
-.fifth{
-    width: 100%;
-    height: 100%;
-    background: url(../img/bg.jpg) no-repeat;
-    background-size:100%;
-    animation: bacs 1.4s 1;
-    position: absolute;
-}
-.sixth{
-    width: 100%;
-    height: 100%;
-    background: url(../img/bg.jpg) no-repeat;
-    background-size:100%;
-    animation: bacs 1.4s 1;
-    position: absolute;
-}
+/*.first{*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background: url(../img/bg.jpg) no-repeat;*/
+    /*background-size:100%;*/
+    /*animation: bacs 1.4s 1;*/
+    /*position: absolute;*/
+/*}*/
+/*.second{*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background: url(../img/bg.jpg) no-repeat;*/
+    /*background-size:100%;*/
+    /*animation: bacs 1.4s 1;*/
+    /*position: absolute;*/
+/*}*/
+/*.third{*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background: url(../img/bg.jpg) no-repeat;*/
+    /*background-size:100%;*/
+    /*animation: bacs 1.4s 1;*/
+    /*position: absolute;*/
+/*}*/
+/*.fourth{*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background: url(../img/bg.jpg) no-repeat;*/
+    /*background-size:100%;*/
+    /*animation: bacs 1.4s 1;*/
+    /*position: absolute;*/
+/*}*/
+/*.fifth{*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background: url(../img/bg.jpg) no-repeat;*/
+    /*background-size:100%;*/
+    /*animation: bacs 1.4s 1;*/
+    /*position: absolute;*/
+/*}*/
+/*.sixth{*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background: url(../img/bg.jpg) no-repeat;*/
+    /*background-size:100%;*/
+    /*animation: bacs 1.4s 1;*/
+    /*position: absolute;*/
+/*}*/
 .seventh.play{
     width: 100%;
     height: 100%;
@@ -373,20 +373,7 @@ hr.last{
         
     }
 
-@-webkit-keyframes long 
-{
-     from{width: 6.5rem;
-            opacity: 1;
-        transform: scale(0,1);}
-    to{width: 6.5rem;
-        opacity: 1;
-        transform: scale(4,1);}
-    /*from{transform: translateX(50%);
-        }
-    to{transform: translateX(1%);
-        }*/
 
-}
 
 .first.play hr.line_fis{
     position: absolute;
@@ -418,16 +405,16 @@ hr.last{
     
 
 }
-.first.play .time{
-    position: absolute;
-    top: 19rem;
-    margin: 11.5rem;
-    opacity: 0;
-    color: #fff;
-    font-size: 1.8rem;
-    animation: upFadeIn 0.6s 3.5s 1;
-    animation-fill-mode: forwards;
-}
+/*.first.play .time{*/
+    /*position: absolute;*/
+    /*top: 19rem;*/
+    /*margin: 11.5rem;*/
+    /*opacity: 0;*/
+    /*color: #fff;*/
+    /*font-size: 1.8rem;*/
+    /*animation: upFadeIn 0.6s 3.5s 1;*/
+    /*animation-fill-mode: forwards;*/
+/*}*/
 
 .first.play .space{
     position: absolute;
@@ -440,29 +427,177 @@ hr.last{
     animation-fill-mode: forwards;
 }
 
-.first.play .titles{
-    position: absolute;
-    width: 21rem;
-    top: -1rem;
-    margin-top: 3rem;
-    margin-left: 9rem;
-    opacity: 0;
+/*.first.play .titles{*/
+    /*position: absolute;*/
+    /*width: 21rem;*/
+    /*top: -1rem;*/
+    /*margin-top: 3rem;*/
+    /*margin-left: 9rem;*/
+    /*opacity: 0;*/
+    /*font-size: 1.8rem;*/
+    /*color: #fff;*/
+    /*text-align: center;*/
+    /*margin: 2rem 0 0 0;*/
+    /*animation: downFadeIn 0.6s 3.5s forwards;*/
+    /*z-index: 998;*/
+/*}*/
+.index .item .title p{
     font-size: 1.8rem;
     color: #fff;
-    animation: downFadeIn 0.6s 3.5s 1;
-    animation-fill-mode: forwards;
-    z-index: 998;
+    line-height: 1;
+    text-align: center;
+    margin: 1.5rem 0 0 0;
 }
-.title{
+
+/*改*/
+.index .item{
+    background: url(../img/bg.jpg) no-repeat;
+    background-size:cover;
+    animation: bacs 1.4s both;
+}
+/*首页*/
+.index .first .bg img{
     position: absolute;
-    width: 21rem;
-    top: -8%;
-    margin-top: 19%;
-    margin-left: 15%;
-    opacity: 1;
-    color: #fff;
-    z-index: 998;
+    width: 100%;
 }
+/*三角123*/
+.index .first.play .bg img.triangle1{
+    animation: triangle-top 0.8s 0.5s both;
+}
+@-webkit-keyframes triangle-top {
+    0% {  top: -36.45rem;  }
+    100% {  top: 0;  }
+}
+.index .first.play .bg img.triangle2{
+    animation: triangle-bottom 0.8s 0.5s both;
+}
+@-webkit-keyframes triangle-bottom {
+    0% {  bottom: -36.45rem;  }
+    100% {  bottom: 0;  }
+}
+.index .first.play .bg img.triangle3{
+    animation: triangle-bottom 0.8s 0.7s both;
+}
+/*顶部标题*/
+.index .first .title{
+    padding: 0 2rem;
+    overflow: hidden;
+}
+.index .first.play .title p{
+    opacity: 0;
+    animation: downFadeIn 0.6s 3.5s both;
+}
+@-webkit-keyframes downFadeIn
+{
+    from{opacity: 0;  transform: translateY(44%);   }
+    to{opacity: 1;  transform: translateY(0%); }
+}
+.index .first.play .title hr{
+    border-top: 1px solid #fff;
+    margin: 0.8rem 0 0 0;
+    animation: hr 1.5s 3s both;
+}
+@-webkit-keyframes hr
+{
+    0% {  transform: scaleX(0.1);  opacity: 0;  }
+    100% {  transform: scaleY(1);  opacity: 1;  }
+}
+/*中心内容*/
+.index .first .content{
+    margin: 6.5rem 0 0 0;
+}
+.index .first.play .content .outer{
+    display: flex;
+    align-items: center;
+    width: 26rem;
+    height: 26rem;
+    background: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: circle-scale 1.2s ease 1.3s both;
+}
+.index .first.play .content .inner{
+    display: flex;
+    align-items: center;
+    width: 23.9rem;
+    height: 23.9rem;
+    background: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: circle-scale 1.2s 1.4s both;
+}
+@-webkit-keyframes circle-scale
+{
+    0% {  transform: scale(0.1);  opacity: 0;  }
+    100% {  transform: scale(1);  opacity: 1;  }
+}
+.index .first .content .invitation{
+    position: relative;
+    width: 16.7rem;
+    text-align: center;
+    padding: 0.5rem 0 0 0;
+    margin: 0 auto;
+}
+.index .first.play .content .invitation hr{
+    position: absolute;
+    width: 100%;
+    border-top: 1px solid #fff;
+    margin: 0;
+    animation: hr 1.5s 3s both;
+}
+.index .first .content .invitation hr:first-child{top:0}
+.index .first .content .invitation hr:last-child{bottom:0}
+.index .first.play .content .invitation h1{
+    font-size: 5.4rem;
+    font-weight: 500;
+    line-height: 1;
+    color: #fff;
+    margin: 0;
+    animation: FadeIn 2.4s 2.7s both;
+}
+.index .first.play .content .invitation h1:nth-child(3){
+    font-size: 2.6rem;
+    margin: 0.5rem 0;
+    animation: FadeIn 2.4s 2.7s both;
+}
+.index .first .content .invitation p{
+    font-size: 1.1rem;
+    color: #fff;
+    line-height: 1;
+    margin: 1.5rem 0 0 0;
+}
+.index .first.play .content .invitation p.time{
+    animation: upFadeIn 0.6s 3.5s both;
+}
+.index .first.play .content .invitation p.place{
+    animation: upFadeIn 0.6s 3.8s both;
+}
+/*底部log*/
+
+@-webkit-keyframes long
+{
+    from{width: 6.5rem;
+        opacity: 1;
+        transform: scale(0,1);}
+    to{width: 6.5rem;
+        opacity: 1;
+        transform: scale(4,1);}
+    /*from{transform: translateX(50%);
+        }
+    to{transform: translateX(1%);
+        }*/
+
+}
+/*.title{*/
+    /*position: absolute;*/
+    /*width: 21rem;*/
+    /*top: -8%;*/
+    /*margin-top: 19%;*/
+    /*margin-left: 15%;*/
+    /*opacity: 1;*/
+    /*color: #fff;*/
+    /*!*z-index: 998;*!*/
+/*}*/
 .first.play .bottom_title{
          position: absolute;
     top: 74%;
@@ -489,14 +624,7 @@ hr.last{
         transform: translateY(0%); }
 
 }
-@-webkit-keyframes downFadeIn 
-{
-    from{opacity: 0;
-         transform: translateY(44%);   }
-    to{opacity: 1;
-        transform: translateY(0%); }
 
-}
 .second.play .biaoti{
         position: absolute;
     margin-left: 39%;

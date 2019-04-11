@@ -22,20 +22,22 @@
         }
         .tongxun{
             stroke: #00b050;
-            stroke-linejoin:round;
-            stroke-linecap:round;
-            stroke-dasharray:8;
-            /*stroke-dashoffset: 8;*/
+            stroke-dasharray:8,4;
         }
         .tongxun1{
-            animation: move 1s linear infinite;
+            stroke-linejoin:round;
+            stroke-linecap:round;
+            animation: move 5s linear infinite;
+        }
+        .tongxun2{
+            stroke-dasharray: 0;
         }
         @keyframes move {
             0%{
-                stroke-dashoffset: 8px;
+                stroke-dashoffset: 0px;
             }
             100%{
-                stroke-dashoffset: -1000px;
+                stroke-dashoffset: -100px;
             }
         }
     </style>
@@ -57,12 +59,13 @@
 <!--    ems-->
     <rect style="fill:#997300" x="224" y="32" width="112" height="30"></rect>
     <polyline class="tongxun tongxun1" points="224,46 88,46 88,217 84,217" marker-end="url(#arrow)"></polyline>
+    <polyline class="tongxun tongxun2" points="278,70 278,74" marker-end="url(#arrow)"></polyline>
+    <polyline class="tongxun tongxun2" points="278,70 278,74" marker-end="url(#arrow)"></polyline>
     <defs>
-        <marker id="arrow" markerWidth="10" markerHeight="10" refx="0" refy="3" orient="auto" markerUnits="strokeWidth">
+        <marker id="arrow" markerWidth="10" markerHeight="10" refx="0" refy="3" orient="auto" markerUnits="userSpaceOnUse">
             <path d="M0,0 L0,6 L9,3 z" fill="#00b050"></path>
         </marker>
     </defs>
-<!--    <polygon points="77 218,84 214,84 222" fill="#00b050"></polygon>-->
 </svg>
 
 </body>

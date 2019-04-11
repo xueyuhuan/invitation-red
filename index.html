@@ -8,48 +8,62 @@
         body,html{min-height:100%}
         html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
         body{margin:0}
-        .test{
-            position: relative;
+        .gfbtxt{font-size: 10px}
+        .bg{fill: #276a7c;}
+        line,polyline{
+            fill:none;
+            stroke-width: 2
         }
-        .bg{
-            width: 100%;
+        .jiaoliu{
+            stroke: #ff0000
         }
-        .animation{
-            position: absolute;
-            top: 20%;
-            left: 46%;
-            width: 10%;
+        .zhiliu{
+            stroke:#7f7f7f
+        }
+        .tongxun{
+            stroke: #00b050;
+            stroke-linejoin:round;
+            stroke-linecap:round;
+            stroke-dasharray:8;
+            /*stroke-dashoffset: 8;*/
+        }
+        .tongxun1{
+            animation: move 1s linear infinite;
         }
         @keyframes move {
-            0% {left: 0%;	 opacity: 0; }
-            70% { left: 70%; opacity: 1 }
-            100% {left: 100%;opacity: 0;}
-        }
-        .animation img{
-            position: absolute;
-            width: 20px;
-            animation:move linear 2.4s infinite both;
-        }
-        .animation img:nth-child(2){
-            animation-delay: 0.6s;
-        }
-        .animation img:nth-child(3){
-            animation-delay: 1.2s;
-        }
-        .animation img:nth-child(4){
-            animation-delay: 1.8s;
+            0%{
+                stroke-dashoffset: 8px;
+            }
+            100%{
+                stroke-dashoffset: -1000px;
+            }
         }
     </style>
 </head>
 <body>
-<div class="test">
-    <img class="bg" src="test.png" alt=""/>
-    <div class="animation">
-        <img src="arrow.png" alt="">
-        <img src="arrow.png" alt="">
-        <img src="arrow.png" alt="">
-        <img src="arrow.png" alt="">
-    </div>
-</div>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="555px" height="344px" style="background: #dbeef3">
+    <text class="gfbtxt" x="40" y="70" fill="#000">光伏板</text>
+    <image x="15" y="80" xlink:href="demo.png"></image>
+    <line class="zhiliu" x1="78" y1="110" x2="110" y2="110"></line>
+    <rect class="bg" x="110" y="96" width="50" height="40"></rect>
+    <polyline class="jiaoliu" points="160,115 178,115 178,142 190,142"></polyline>
+    <rect class="bg" x="190" y="122" width="38" height="83"></rect>
+    <line class="jiaoliu" x1="228" y1="162" x2="258" y2="162"></line>
+    <rect class="bg" x="258" y="142" width="52" height="42"></rect>
+    <line class="zhiliu" x1="310" y1="162" x2="378" y2="162"></line>
+    <rect class="bg" x="378" y="144" width="50" height="38"></rect>
+    <line class="zhiliu" x1="428" y1="162" x2="470" y2="162"></line>
+    <rect class="bg" x="470" y="144" width="50" height="38"></rect>
+<!--    ems-->
+    <rect style="fill:#997300" x="224" y="32" width="112" height="30"></rect>
+    <polyline class="tongxun tongxun1" points="224,46 88,46 88,217 84,217" marker-end="url(#arrow)"></polyline>
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refx="0" refy="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#00b050"></path>
+        </marker>
+    </defs>
+<!--    <polygon points="77 218,84 214,84 222" fill="#00b050"></polygon>-->
+</svg>
+
 </body>
 </html>
